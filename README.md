@@ -11,7 +11,7 @@ A setup that integrates **Fastfetch** with **pokimg** to display a random Pokém
 
 <img
   src="Showcase/demo.png"
-  style="border-radius:1rem;width:280px;max-width:100%;"
+  style="border-radius:1rem;width:1000px;max-width:100%;"
 />
 
 
