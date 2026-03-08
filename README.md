@@ -53,7 +53,6 @@ Make it executable and move it somewhere in your PATH:
 
 ```bash
 chmod +x pokimg
-sudo mv pokimg /usr/local/bin/pokimg
 ```
 
 > **Note:** `pokimg` requires your terminal to support the **Kitty graphics protocol** or **iTerm2 image protocol**. If your terminal renders a wall of garbled escape codes, that's your terminal's fault, not yours. (Switch to Kitty.)
@@ -74,6 +73,23 @@ Open `bashrc.txt` from this repo — it contains the magic one-liner that ties e
 ```bash
 cat bashrc.txt >> ~/.bashrc
 source ~/.bashrc
+```
+```bash
+nano ~/.bashrc
+
+then edit the {username} in the POKIMG_PATH to you username
+
+POKIMG_PATH="/home/{username}/pokimg"
+OUTPUT=$(python3 $POKIMG_PATH/random_pokemon.py)
+POKEMON=$(echo $OUTPUT | awk '{print $1}')
+echo "$OUTPUT" >/tmp/pokemon_name.txt
+
+fastfetch \
+  --logo "$POKIMG_PATH/images/$POKEMON.png" \
+  --logo-type chafa \
+  --logo-width 30 \
+  --logo-height 15 \
+  --config ~/.config/fastfetch/config.jsonc
 ```
 
 This will run `pokimg` + `fastfetch` every time you open a new terminal session. Yes, every time. You will see Pokémon before you see your actual work. This is the way.
