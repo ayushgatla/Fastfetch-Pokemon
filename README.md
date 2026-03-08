@@ -165,7 +165,7 @@ Fastfetch-Pokemon/
 ## 🙏 Credits
 
 - [Fastfetch](https://github.com/fastfetch-cli/fastfetch) — for being a genuinely great neofetch replacement
-- [pokimg](https://github.com/nicowillis/pokimg) (or whichever flavor) — for making terminals inexplicably better
+- [pokimg](https://github.com/FuzzyGrim/pokimg) (or whichever flavor) — for making terminals inexplicably better
 - You — for having the taste to want Pokémon in your terminal
 
 ---
