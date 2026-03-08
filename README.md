@@ -6,9 +6,21 @@ A setup that integrates **Fastfetch** with **pokimg** to display a random Pokém
 
 ---
 
-## 📸 Showcase
+<div style="display:flex;gap:16px;flex-wrap:wrap; display:flex-column">
 
-Check the [`Showcase/`](./Showcase) folder to see what this actually looks like — because words cannot do justice to Bulbasaur judging your RAM usage.
+
+<img
+  src="https://raw.githubusercontent.com/ayushgatla/Fastfetch-Pokemon/"
+  alt="How Syncoes Works Step 1"
+  style="border-radius:1rem;width:280px;max-width:100%;"
+/>
+
+
+
+
+
+</div>
+
 
 ---
 
