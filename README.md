@@ -10,7 +10,7 @@ A setup that integrates **Fastfetch** with **pokimg** to display a random Pokém
 
 
 <img
-  src="https://raw.githubusercontent.com/ayushgatla/lecture-block/main/icons/logos.png/Showcase/demo2.png"
+  src="https://github.com/ayushgatla/Fastfetch-Pokemon/tree/main/Showcase/demo.png"
   style="border-radius:1rem;width:280px;max-width:100%;"
 />
 
