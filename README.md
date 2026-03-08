@@ -6,7 +6,7 @@ A setup that integrates **Fastfetch** with **pokimg** to display a random Pokém
 
 ---
 
-<div style="display:flex;gap:16px;flex-wrap:wrap; display:flex-column">
+<div style="display:flex;gap:16px;flex-wrap:wrap; height=500px; width=1000px; display:flex-column">
 
 
 <img
