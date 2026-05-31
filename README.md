@@ -105,7 +105,7 @@ fastfetch \
   --logo-height 15 \
   --config ~/.config/fastfetch/config.jsonc
 ```
-### 5.Edit yout fastfetch config 
+### 5.Edit yout fastfetch config (Manual method if not done before)
 </br>
 
 nano .config/fastfetch/config.jsonc
