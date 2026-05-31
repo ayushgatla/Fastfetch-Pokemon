@@ -91,6 +91,7 @@ source ~/.bashrc
 nano ~/.bashrc
 
 then edit the {username} in the POKIMG_PATH to you username
+also make sure to use kitty as your terminal
 
 POKIMG_PATH="/home/{username}/pokimg"
 OUTPUT=$(python3 $POKIMG_PATH/random_pokemon.py)
@@ -99,7 +100,7 @@ echo "$OUTPUT" >/tmp/pokemon_name.txt
 
 fastfetch \
   --logo "$POKIMG_PATH/images/$POKEMON.png" \
-  --logo-type chafa \
+  --logo-type kitty-direct \
   --logo-width 30 \
   --logo-height 15 \
   --config ~/.config/fastfetch/config.jsonc
