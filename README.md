@@ -93,7 +93,7 @@ nano ~/.bashrc
 then edit the {username} in the POKIMG_PATH to you username
 also make sure to use kitty as your terminal
 
-POKIMG_PATH="/home/{username}/pokimg"
+POKIMG_PATH="/home/{username}/Fastfetch-Pokemon"
 OUTPUT=$(python3 $POKIMG_PATH/random_pokemon.py)
 POKEMON=$(echo $OUTPUT | awk '{print $1}')
 echo "$OUTPUT" >/tmp/pokemon_name.txt
@@ -105,6 +105,134 @@ fastfetch \
   --logo-height 15 \
   --config ~/.config/fastfetch/config.jsonc
 ```
+#edit your fastfetch config
+nano .config/fastfetch/config.jsonc
+```bash
+
+
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+
+  "display": {
+    "separator": " ",
+    "size": {
+      "maxPrefix": "GB",
+      "spaceBeforeUnit": "always",
+      "binaryPrefix": "si"
+    }
+  },
+
+  "modules": [
+    {
+      "type": "custom",
+      "format": "\n"
+    },
+
+    {
+      "type": "custom",
+      "key": "╭─────────────────╮"
+    },
+
+    {
+      "type": "title",
+      "key": "│  user          │",
+      "format": "{user-name-colored}@{host-name-colored}"
+    },
+
+    {
+      "type": "os",
+      "key": "│  distro        │",
+      "format": "{pretty-name}"
+    },
+
+    {
+      "type": "kernel",
+      "key": "│ 󰒋 kernel        │",
+      "format": "{release}"
+    },
+
+    {
+      "type": "wm",
+      "key": "│ 󰖲 wm            │",
+      "format": "{pretty-name}"
+    },
+
+    {
+      "type": "terminal",
+      "key": "│  terminal      │",
+      "format": "{pretty-name}"
+    },
+
+    {
+      "type": "shell",
+      "key": "│  shell         │",
+      "format": "{pretty-name}"
+    },
+
+    {
+      "type": "packages",
+      "key": "│ 󰏖 pacman        │",
+      "format": "{pacman}"
+    },
+
+    {
+      "type": "packages",
+      "key": "│ 󰏖 flatpak       │",
+      "format": "{flatpak-system}"
+    },
+
+    {
+      "type": "cpu",
+      "key": "│ 󰍛 cpu           │",
+      "format": "{name}"
+    },
+
+    {
+      "type": "gpu",
+      "key": "│ 󰢮 gpu           │",
+      "hideType": "integrated",
+      "format": "{name}"
+    },
+
+    {
+      "type": "memory",
+      "key": "│ 󰑭 memory        │",
+      "format": "{used} / {total}"
+    },
+
+    {
+      "type": "disk",
+      "key": "│ 󰋊 disk          │",
+      "format": "{size-used} / {size-total}"
+    },
+
+    {
+      "type": "uptime",
+      "key": "│ 󰅐 uptime        │"
+    },
+
+    {
+      "type": "custom",
+      "key": "│  colors        │",
+      "format": "\u001b[90m  \u001b[31m  \u001b[32m  \u001b[33m  \u001b[34m  \u001b[35m  \u001b[36m  \u001b[37m"
+    },
+
+    {
+      "type": "custom",
+      "key": "╰─────────────────╯"
+    },
+
+    {
+      "type": "command",
+      "key": "󰐠 pokemon",
+      "text": "cat /tmp/pokemon_name.txt"
+    }
+  ]
+}
+
+
+```
+
 
 This will run `pokimg` + `fastfetch` every time you open a new terminal session. Yes, every time. You will see Pokémon before you see your actual work. This is the way.
 
