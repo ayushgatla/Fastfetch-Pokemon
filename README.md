@@ -36,6 +36,7 @@ Before you embarrass yourself by blindly copy-pasting commands, make sure you ha
 
 ---
 
+---
 ## ⚙️ Installation
 
 ### 1. Clone the repo
@@ -82,6 +83,11 @@ Fastfetch-Pokemon/
 
 ---
 
+## Warning
+
+- **Kitty** - use kitty as your terminal to experience without any issues
+- if by any chance you dont want to use kitty then after installing be sure to change the kitty-direct logo-type to chafa
+
 ## 🐛 Troubleshooting
 
 | Problem | Likely Cause | Fix |
@@ -103,3 +109,5 @@ Fastfetch-Pokemon/
 ---
 
 *"It's not procrastination if your terminal looks sick while you do it."*
+
+
