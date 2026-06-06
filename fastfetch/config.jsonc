@@ -1,5 +1,6 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+
   "display": {
     "separator": " ",
     "size": {
@@ -8,97 +9,110 @@
       "binaryPrefix": "si"
     }
   },
+
   "modules": [
     {
       "type": "custom",
-      "format": "\n\n"
+      "format": "\n"
     },
+
     {
       "type": "custom",
-      "key": "╭───────────╮"
+      "key": "╭─────────────────╮"
     },
+
     {
       "type": "title",
-      "key": "│ {#34}{#cyan}{icon} user    {#keys}│",
+      "key": "│  user          │",
       "format": "{user-name-colored}@{host-name-colored}"
     },
+
     {
       "type": "os",
-      "key": "│ {#34}{#cyan}{icon} distro  {#keys}│",
+      "key": "│  distro        │",
       "format": "{pretty-name}"
     },
+
     {
       "type": "kernel",
-      "key": "│ {#35}{#cyan} kernel   {#keys}│",
+      "key": "│ 󰒋 kernel        │",
       "format": "{release}"
     },
+
     {
       "type": "wm",
-      "key": "│ {#36}{#green}󰇄 wm      {#keys}│",
+      "key": "│ 󰖲 wm            │",
       "format": "{pretty-name}"
     },
-    {
-      "type": "de",
-      "key": "│ {#36}{#green}󰇄 desktop {#keys}│"
-    },
+
     {
       "type": "terminal",
-      "key": "│ {#31}{#green} term     {#keys}│",
+      "key": "│  terminal      │",
       "format": "{pretty-name}"
     },
+
     {
       "type": "shell",
-      "key": "│ {#32}{#green} shell    {#keys}│",
+      "key": "│  shell         │",
       "format": "{pretty-name}"
     },
+
     {
       "type": "packages",
-      "key": "│ {#33}{#yellow}󰮯 pacman  {#keys}│",
+      "key": "│ 󰏖 pacman        │",
       "format": "{pacman}"
     },
+
     {
       "type": "packages",
-      "key": "│ {#33}{#yellow} flatpak  {#keys}│",
+      "key": "│ 󰏖 flatpak       │",
       "format": "{flatpak-system}"
     },
+
     {
       "type": "cpu",
-      "key": "│ {#33}{#red}󰍛 cpu     {#keys}│",
+      "key": "│ 󰍛 cpu           │",
       "format": "{name}"
     },
+
     {
       "type": "gpu",
-      "key": "│ {#35}{#red}󰢮 gpu     {#keys}│",
+      "key": "│ 󰢮 gpu           │",
       "hideType": "integrated",
-      "format": "{1} {2}"
+      "format": "{name}"
     },
+
     {
       "type": "memory",
-      "key": "│ {#36}{#red} memory   {#keys}│",
-      "format": "{used}  {#green}{#} {total}"
+      "key": "│ 󰑭 memory        │",
+      "format": "{used} / {total}"
     },
+
     {
       "type": "disk",
-      "key": "│ {#34}{#red} disk     {#keys}│",
-      "format": "{size-used} {#red}{#} {size-total}"
+      "key": "│ 󰋊 disk          │",
+      "format": "{size-used} / {size-total}"
     },
+
     {
       "type": "uptime",
-      "key": "│ {#33}{#magenta}󰅐 uptime  {#keys}│"
+      "key": "│ 󰅐 uptime        │"
     },
-  
+
     {
       "type": "custom",
-      "key": "│ {#39} colors   {#keys}│",
-      "format": "{#black}{#} {#white}{#} {#red}{#} {#green}{#} {#yellow}{#} {#blue}{#} {#magenta}{#} {#cyan}{#} "
+      "key": "│  colors        │",
+      "format": "\u001b[90m  \u001b[31m  \u001b[32m  \u001b[33m  \u001b[34m  \u001b[35m  \u001b[36m  \u001b[37m"
     },
+
     {
       "type": "custom",
-      "key": "╰───────────╯"
+      "key": "╰─────────────────╯"
     },
-      {
+
+    {
       "type": "command",
-      "key": "{#35}{#cyan}󰐠 pokemon {#keys}",
+      "key": "󰐠 pokemon",
       "text": "cat /tmp/pokemon_name.txt"
     }
   ]
