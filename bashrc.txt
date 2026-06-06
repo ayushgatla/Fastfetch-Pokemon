@@ -1,11 +1,20 @@
-POKIMG_PATH="/home/username/pokimg"
-OUTPUT=$(python3 $POKIMG_PATH/random_pokemon.py)
-POKEMON=$(echo $OUTPUT | awk '{print $1}')
-echo "$OUTPUT" >/tmp/pokemon_name.txt
+# Fastfetch-Pokemon
 
+POKIMG_PATH="$HOME/.local/share/Fastfetch-Pokemon"
+
+# Generate random pokemon
+OUTPUT=$(python3 "$POKIMG_PATH/random_pokemon.py")
+
+# Extract pokemon name
+POKEMON=$(echo "$OUTPUT" | awk '{print $1}')
+
+# Save for fastfetch custom modules if needed
+echo "$OUTPUT" > /tmp/pokemon_name.txt
+
+# Display fastfetch
 fastfetch \
-  --logo "$POKIMG_PATH/images/$POKEMON.png" \
-  --logo-type chafa \
-  --logo-width 30 \
-  --logo-height 15 \
-  --config ~/.config/fastfetch/config.jsonc
+    --logo "$POKIMG_PATH/images/${POKEMON}.png" \
+    --logo-type kitty-direct \
+    --logo-width 30 \
+    --logo-height 15 \
+    --config "$HOME/.config/fastfetch/config.jsonc"
