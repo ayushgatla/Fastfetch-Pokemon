@@ -25,16 +25,7 @@ A setup that integrates **Fastfetch** with **pokimg** to display a random Pokém
 
 ---
 
-## 🧰 Requirements
 
-Before you embarrass yourself by blindly copy-pasting commands, make sure you have these:
-
-- **Fastfetch** — the system info fetcher (not neofetch, we've evolved)
-- **pokimg** — the script that renders Pokémon sprites in your terminal (included in this repo)
-- A terminal emulator that supports **image rendering** (Kitty, iTerm2, WezTerm — basically anything that isn't your grandpa's xterm)
-- A Linux/macOS system (Windows users: I'm so sorry)
-
----
 
 ---
 ## ⚙️ Installation
