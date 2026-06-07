@@ -78,7 +78,7 @@ Fastfetch-Pokemon/
 
 - **Kitty** - use kitty as your terminal to experience without any issues
 - if by any chance you dont want to use kitty then after installing be sure to change the kitty-direct logo-type to chafa
-- in the file at ~/.local/share/Fastfetch-Pokemon
+- in the file run.sh at ~/.local/share/Fastfetch-Pokemon
 - also make sure to install chafa first but some pokemon png are not well displayed chafa therefore kitty is recomended
 
 ## 🐛 Troubleshooting
